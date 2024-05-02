@@ -1,0 +1,332 @@
+/* <!-- Basic CSS --> */
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.menu{
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2%;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.menu a{
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* <!-- Accent-Color --> */
+
+input[type=checkbox] {
+    accent-color: red;
+}
+  
+input[type=radio] {
+    accent-color: green;
+}
+  
+input[type=range] {
+    accent-color: rgb(0, 0, 255);
+}
+  
+progress {
+    accent-color: hsl(39, 100%, 50%);
+}
+
+
+/* <!-- Align-Content Property --> */
+#main{
+    width: 70px;
+    height: 300px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#main div{
+    width: 70px;
+    height: 100px;
+}
+
+/* <!-- align-items Property --> */
+div{
+    display: flex;
+    align-items: center;
+}
+
+/* <!-- align-self Property --> */
+.main{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main div{
+    flex: 1;
+}
+
+.orangeDiv{
+    align-self: center;
+}
+
+/* <!-- all property --> */
+
+#all1{
+    background-color: green;
+    color: whitesmoke;
+}
+
+/* #all2{
+    background-color: green;
+    color: whitesmoke;
+    all: inherit;
+} */
+
+#all3{
+    background-color: green;
+    color: whitesmoke;
+    all: initial;
+}
+
+#all4{
+    background-color: green;
+    color: whitesmoke;
+    all: unset;
+}
+
+/* <!-- animation --> */
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(144, 0, 255);
+    position: relative;
+    animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+
+/* <!-- animation-delay --> */
+.delay{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(30, 182, 142);
+    animation: mymove 3s 2;
+    position: relative;
+    animation-delay: 12s;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+
+/* <!-- animation-direction --> */
+.direction{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(30, 182, 142);
+    animation: myAnimation 3s infinite;
+    position: relative;
+    animation-direction: alternate;
+}
+@keyframes myAnimation {
+    0% {background: red; left:0px; top:0px}
+    25% {background: rgb(0, 219, 33); left:200px; top:0px}
+    50% {background: rgb(255, 166, 0); left:200px; top:200px}
+    75% {background: rgb(255, 0, 102); left:0px; top:200px}
+    100% {background: rgb(51, 0, 255); left:0px; top:0px}
+}
+
+
+/* <!-- animation-duration --> */
+#duration{
+    margin-top: 220px;
+}
+.duration{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 225);
+    animation: myDuration 4s infinite;
+    position: relative;
+    animation-direction: alternate;
+}
+@keyframes myDuration {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+/* <!-- animation-fill-mode --> */
+.fill{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(196, 0, 91);
+    animation: fill 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes fill {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+/* <!-- animation-iteration-count --> */
+.iteration{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(61, 102, 216);
+    animation: iteration 3s;
+    position: relative;
+    animation-iteration-count: 4;
+}
+@keyframes iteration {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+/* <!-- animation-play-state --> */
+.play{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(82, 216, 61);
+    animation: play 2s infinite;
+    position: relative;
+    animation-play-state: linear;
+}
+@keyframes play {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+/* <!-- animation-timing-function --> */
+.timing{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 151, 61);
+    animation: timing 5s infinite;
+    position: relative;
+    animation-timing-function: paused;
+}
+@keyframes timing {
+    from {left: 0px;}
+    to {left: 200px}
+}
+
+/* <!-- aspect ratio --> */
+.ratio{
+    background-color: aqua;
+    width: 100px;
+    aspect-ratio: 3/2;
+}
+
+/* <!-- backdrop-filter --> */
+.backdrop{
+    background: url(../image/samurai.jpg) no-repeat;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    height: 65vh;
+    width: 100%;    
+}
+.backdrop div{
+    background-color: #e1e1e17d;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    width: 602px;
+}
+.backdrop span{
+    margin: 0 auto;
+    color: white
+}
+
+/* <!-- background-attatchment --> */
+#attatchment{
+    background: url(../image/samurai.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    height: 65vh;
+    width: 100%;    
+}
+
+/* <!-- background-blend-mode --> */
+#myBlend{
+    background-image: url(../image/samurai.jpg), url("/day4/image/tree.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 65vh;
+    background-blend-mode: luminosity;
+}
+
+/* <!-- background-clip --> */
+.example1{
+    border: 5px dotted black;
+    padding: 2%;
+    background: goldenrod;
+    background-clip: border-box;
+}
+.example2{
+    border: 5px dotted black;
+    padding: 2%;
+    background: rgb(0, 113, 166);
+    background-clip: padding-box;
+}
+
+.example3{
+    border: 5px solid black;
+    padding: 2%;
+    background: rgb(188, 0, 66);
+    background-clip: content-box;
+}
+
+/* <!-- background-origin --> */
+.origin1{
+    border: 5px dotted black;
+    padding: 25px;
+    background:  url(../image/planet.jpg) no-repeat;
+    background-origin: border-box;
+    color: white;
+}
+.origin2{
+    border: 5px dashed black;
+    padding: 25px;
+    background: url(../image/planet.jpg) no-repeat;
+    background-origin: padding-box;
+    color: white;
+}
+
+.origin3{
+    border: 5px dotted black;
+    padding: 25px;
+    background: url(../image/planet.jpg) no-repeat;
+    background-origin: content-box;
+    color: white;
+}
+
+/* <!-- background-position --> */
+.position{
+    background: url("/day4/image/city.jpg") no-repeat;
+    background-size: 40%;
+    width: 100%;
+    height: 40vh;
+    background-attachment: inherit;
+    background-position: center;
+    background-position-x: center;
+}

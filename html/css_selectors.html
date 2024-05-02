@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSB-619 | CSS Selectors</title>
+    <link rel="stylesheet" href="../css/css_selectors.css">
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="../index.html">CSS Reference |</a>
+        <a href="css_selectors.html">CSS Selectors</a>
+    </div>
+
+    <div class="selector">
+        <ol>
+            <li>
+                <h4>class selector</h4>
+                <div class="name">
+                    Science Fair Is Open For All
+                    <div class="science">Welcome to SERN</div>
+                    <div class="math">Bangladesh Mathematical Olympiad 2024</div>
+                </div>
+            </li>
+            <li>
+                <h4>id Selector</h4>
+                <div id="yourname">
+                    What is you name?
+                </div>
+                <div id="firstname">
+                    My name is Nazmul Hossain
+                </div>
+            </li>
+            <li>
+                <h4>element Selector</h4>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea aliquam ipsa blanditiis recusandae totam pariatur perferendis mollitia accusantium nihil qui, laborum rem unde neque, possimus, incidunt itaque? Inventore, quidem dolorum.
+                    Ratione provident consequatur laborum nesciunt tenetur, veniam ducimus dolorem excepturi aperiam labore corporis itaque officiis hic sequi beatae sed? Illo non quibusdam eligendi. Reprehenderit neque ad aut tempore mollitia? <br><br>
+                    Nisi tempore voluptatibus veritatis. Fugit voluptatum voluptatibus dolorum ratione impedit ducimus error molestias iusto nemo magni, et veritatis asperiores dicta expedita aliquid iure repudiandae a porro omnis accusantium aut itaque!</p>
+                </div>
+            </li>
+            <li>
+                <h4>element.class Selector</h4>
+                <h3>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsam illum. Rerum non quae quidem odio vel, voluptas sunt tenetur.</div>
+                </h3>
+            </li>
+            <li>
+                <h4>element,element Selector</h4>
+                <h1>I am heading 1</h1>
+                <marquee behavior="" direction="">Welcome to the National Aronotics And Space Administration (NASA)</marquee>
+            </li>
+            <li>
+                <h4>element element Selector</h4>
+                <div>
+                    <h3>This is heading 3</h3>
+                </div>
+            </li>
+            <li>
+                <h4>element>element Selector</h4>
+                <div>
+                    <h5>I am h5 element and my parent is div.</h5>
+                </div>
+                <div>
+                    <span>
+                        <h5>I am h5 element and my parent is span.</h5>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <h4>element+element Selector</h4>
+                <div>
+                    <article>I am article element and my parent is div.</article>
+                </div>
+                <flag>Hello Public, I am flag</flag>
+            </li>
+            <li>
+                <h4>element1~element2 Selector</h4>
+                <div>A div element.</div>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul><br>
+
+                    <b>The first paragraph.</b>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+
+                    <h5>Another list</h5>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+            </li>
+            <li>
+                <h4>[attribute] Selector: a[target]</h4>
+                <a href="">NASA</a>
+                <a href="" target="_blank">Facebook</a>
+                <a href="" target="_blank">Google</a>
+            </li>
+            <li>
+                <h4>[attribute] Selector: a[target="value"]</h4>
+                <a href="#" target="_parent">SERN</a>
+                <a href="#">Instagram</a>
+                <a href="#" target="_parent">Twitter</a>
+            </li>
+            <li>
+                <h4>[attribute^=value] Selector: a[href^="https"]</h4>
+                <a href="twitter.com">Twitter</a>
+                <a href="https://sern.eu/" >SERN</a>
+                <a href="https://instagram.com/">Instagram</a>
+            </li>
+            <li>
+                <h4>[attribute$=value] Selector: a[href$=".bd"]</h4>
+                
+                <a href="instagram.com">Instagram</a>
+                <a href="seu.edu.bd">SEU</a>
+                <a href="ewubd.edu" >EWU</a>
+                <a href="daffodilvarsity.edu.bd" >Daffodil</a>
+            </li>
+            <li>
+                <h4>[attribute*=value] Selector: a[href*=".edu"]</h4>
+                
+                <a href="www.instagram.com">Instagram</a>
+                <a href="seu.edu.bd/">SEU</a>
+                <a href="www.ewubd.edu" >EWU</a>
+                <a href="daffodilvarsity.edu.bd/" >Daffodil</a>
+            </li>
+            <li>
+                <h4>:active Selector</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <h4>::after Selector</h4>
+                <bdi>Hotmail: nazmul@hotmail.com</bdi><br>
+                <flag>Email: nazmulhossain@gmail.com</flag>
+            </li>
+            <li>
+                <h4>::befor Selector</h4>
+                <caption>Email: nazmulhossain@gmail.com</caption> <br>
+                <data>Hotmail: nazmul@hotmail.com</data>
+            </li>
+            <li>
+                <h4>:checked Selector</h4>
+                <input type="checkbox"> I am robot <br>
+                <input type="checkbox">I am human <br>
+                <input type="radio" checked>All okay
+            </li>
+            <li>
+                <h4>:default Selector</h4>
+                <form action="">
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other
+                </form>
+            </li>
+            <li>
+                <h4>:disabled Selector</h4>
+                <form action="">
+                    <input type="text" placeholder="First Name" value="Mickey"><br>
+                    <input type="text" placeholder="Last Name" value="Mouse"><br>
+                    <input type="text" placeholder="Disabled" disabled="disabled" value="Disneyland">
+                </form>
+            </li>
+            <li>
+                <h4>:empty Selector</h4>
+                <p></p>
+                <div>Bangladesh</div>
+                <div>Quatar</div>
+            </li>
+            <li>
+                <h4>:first-child Selector</h4>
+                <div>
+                    <dd>This is the first child of its parent div</dd>
+                    <dd>This is the second child of its parent div</dd>
+                    <dd>This is the last child of its parent div</dd>
+                </div>
+            </li>
+            <li>
+                <h4>::first-letter</h4>
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+            </li>
+            <li>
+                <h4>::first-line</h4>
+                <section>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus neque laborum animi consectetur aliquid similique at quisquam veniam esse assumenda corrupti, nemo adipisci sit quasi molestiae consequuntur? Necessitatibus, voluptates.
+                    Ullam minus, recusandae ea corrupti rem nostrum voluptate! Facilis assumenda fugiat quas, sed magni et eum tempora reprehenderit quia vitae incidunt ad ut voluptate eaque mollitia quis quo sequi ratione?
+                </section>
+            </li>
+            
+        </ol>
+    </div>
+
+
+
+</body>
+</html>

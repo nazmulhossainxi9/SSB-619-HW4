@@ -1,0 +1,185 @@
+/* <!-- Basic CSS --> */
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.menu{
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2%;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.menu a{
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: 500;
+}
+/* <!-- class selector --> */
+.name{
+    margin-left: 20px;
+}
+.science,.math{
+    background-color: aquamarine;
+}
+
+
+/* <!-- id selector --> */
+#yourname{
+    font-size: x-large;
+    color: rgb(216, 148, 0);
+}
+
+
+/* <!-- element selector --> */
+p{
+    color: rgb(93, 93, 93);
+    background-color: rgb(222, 248, 255);
+}
+
+/* <!-- element.class Selector --> */
+h3 .text{
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgb(255, 199, 224);
+}
+
+/* <!-- element,element Selector --> */
+h1, marquee{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(163, 255, 255);
+}
+
+/* <!-- element element Selector --> */
+div h3{
+    color: forestgreen;
+}
+
+/* <!-- element>element Selector --> */
+div>h5{
+    font-size: large;
+    font-weight: 400;
+    color:rgb(216, 148, 0);
+}
+
+/* <!-- element+element Selector --> */
+div+flag{
+    font-size: large;
+    font-weight: 400;
+    color:rgb(216, 148, 0);
+}
+
+/* <!-- element~element Selector --> */
+b~ul{
+    font-size: large;
+    font-weight: 400;
+    background:rgb(9, 78, 3);
+    color: white;
+}
+
+/* <!-- [attribute] Selector --> */
+a[target]{
+    background-color: rgb(225, 192, 255);
+}
+
+/* <!-- [attribute=value] Selector --> */
+a[target="_parent"]{
+    background-color: rgb(255, 241, 112);
+}
+
+/* <!-- [attribute^=value] Selector --> */
+a[href^="https"]{
+    background-color: rgb(255, 152, 245);
+    color: black;
+}
+
+/* <!-- [attribute$=value] Selector --> */
+a[href$=".bd"]{
+    background-color: rgb(152, 197, 255);
+    color: black;
+}
+
+/* <!-- [attribute*=value] Selector --> */
+a[href*="www"]{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    background-color: rgb(206, 0, 0);
+    padding:5px 14px;
+}
+
+/* <!-- :active Selector --> */
+a:active{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    background-color: rgb(206, 0, 0);
+    padding:5px 14px;
+}
+
+/* <!-- ::after Selector --> */
+bdi::after{
+    content: " - not available";
+    padding-right: 5px;
+    background-color: rgb(255, 194, 194);
+}
+
+/* <!-- ::before Selector --> */
+data::before{
+    content: " Not found ";
+    background-color: rgb(194, 206, 255);
+}
+
+/* <!-- :checked Selector --> */
+input:checked{
+    width: 20px;
+    height: 20px;
+}
+
+/* <!-- :default Selector --> */
+input:default{
+    box-shadow: 0 0 1px 1px red;
+}
+
+/* <!-- :disabled Selector --> */
+input[type="text"]:enabled{
+    background-color: rgb(255, 236, 184);
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* <!-- :empty Selector --> */
+p:empty{
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+/* <!-- :first-child Selector --> */
+dd:first-child{
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 10px;
+    padding: 15px 0;
+}
+
+/* <!-- :first-letter Selector --> */
+h2:first-letter{
+    color: Orange;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* <!-- :first-line Selector --> */
+section:first-line{
+    font-size: 20px;
+    color: Orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
